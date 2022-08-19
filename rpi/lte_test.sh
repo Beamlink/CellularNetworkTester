@@ -27,7 +27,7 @@ sudo ip link set wwan0 up
 
 sudo ip link set wlan0 down 
 
-sudo qmicli -p -d /dev/cdc-wdm1 --device-open-net='net-raw-ip|net-no-qos-header' --wds-start-network="ip-type=4" --client-no-release-cid 
+sudo qmicli -p -d /dev/cdc-wdm0 --device-open-net='net-raw-ip|net-no-qos-header' --wds-start-network="ip-type=4" --client-no-release-cid 
 
 sudo udhcpc -i wwan0
 
