@@ -15,7 +15,7 @@ Prerequisities:
 
 ## Setup 
 Setup your Raspberry Pi with Raspberry Pi OS Lite- 
-1. Download the Raspberry Pi Imager- [Raspberry Pi Imager] (https://www.raspberrypi.com/software/) 
+1. Download the Raspberry Pi Imager- [Raspberry Pi Imager](https://www.raspberrypi.com/software/) 
 2. Load the Raspberry Pi OS Lite onto the MicroSD Card using the imager, keep the following setting modifications in mind:
    -Enable SSH 
    -Set Username and Password 
