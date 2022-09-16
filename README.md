@@ -36,6 +36,9 @@ Things to keep in mind-
 - It is essential to start by unloading the option and qmi_wwan driver and then forcefully load the qmi module to utilize the qmi_wwan 
 - Changing the default MTU from 1500 to 1430 is crucial to avoid any qmi call failed errors
 - Do not put the wlan down if you are connected through SSH 
+- The interface number (wwan0/ wwan1/ ...) may change for each system, do check the interface before entering it in the bash file 
+
+After system specific modifications, run the bash file in the same directory the above file is created in. 
 
 ## Test your tester 
 
