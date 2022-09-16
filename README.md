@@ -15,10 +15,10 @@ Prerequisities:
 
 ## Setup 
 1. Setup your Raspberry Pi with Raspberry Pi OS Lite. Using this Lite version of the OS ensures less power consumption, less RAM usage and efficiently works across all Raspberry pi Models-
--a. Download the Raspberry Pi Imager- [Raspberry Pi Imager] (https://www.raspberrypi.com/software/) 
--b. Load the Raspberry Pi OS Lite onto the MicroSD Card using the imager, keep the following setting modifications in mind:
- -Enable SSH 
- -Set Username and Password 
- -Configure wirless LAN (to establish WiFi connectivity)
--c. Insert the MicroSD in the SD slot on the Pi 
--d. Power up the Pi and check its connectivity to the network using ``` ip -c a ```
+   -a. Download the Raspberry Pi Imager- [Raspberry Pi Imager] (https://www.raspberrypi.com/software/) 
+   -b. Load the Raspberry Pi OS Lite onto the MicroSD Card using the imager, keep the following setting modifications in mind:
+       -Enable SSH 
+       -Set Username and Password 
+       -Configure wirless LAN (to establish WiFi connectivity)
+   -c. Insert the MicroSD in the SD slot on the Pi 
+   -d. Power up the Pi and check its connectivity to the network using ``` ip -c a ```
