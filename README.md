@@ -14,7 +14,7 @@ Prerequisities:
 | [Other]           | configured SIMcard                                                                                |
 
 ## Setup 
-1. Setup your Raspberry Pi with Raspberry Pi OS Lite. Using this Lite version of the OS ensures less power consumption, less RAM usage and efficiently works across all Raspberry pi Models-
+1. Setup your Raspberry Pi with Raspberry Pi OS Lite.
    -a. Download the Raspberry Pi Imager- [Raspberry Pi Imager] (https://www.raspberrypi.com/software/) 
    -b. Load the Raspberry Pi OS Lite onto the MicroSD Card using the imager, keep the following setting modifications in mind:
        -Enable SSH 
