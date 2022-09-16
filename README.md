@@ -22,3 +22,4 @@ Setup your Raspberry Pi with Raspberry Pi OS Lite-
    -Configure wirless LAN (to establish WiFi connectivity)
 3. Insert the MicroSD in the SD slot on the Pi 
 4. Power up the Pi and check its connectivity to the network using ``` ip -c a ```
+5. Check SSH 
