@@ -14,13 +14,24 @@ CNT is a Low-cost LTE Test Device for testing LTE Network Performance. This repo
 | [Other]           | configured SIMcard                                                                                |
 
 ## Setup 
--Setup your Raspberry Pi with Raspberry Pi OS Lite- 
+
+Setup your Raspberry Pi with Raspberry Pi OS Lite- 
 1. Download the Raspberry Pi Imager- [Raspberry Pi Imager](https://www.raspberrypi.com/software/) 
 2. Load the Raspberry Pi OS Lite onto the MicroSD Card using the imager, keep the following setting modifications in mind:
-   -Enable SSH 
-   -Set Username and Password 
-   -Configure wirless LAN (to establish WiFi connectivity)
+   - Enable SSH 
+   - Set Username and Password 
+   - Configure wirless LAN (to establish WiFi connectivity)
 3. Insert the MicroSD in the SD slot on the Pi 
 4. Power up the Pi and check its connectivity to the network using ``` ip -c a ```
 5. Check SSH 
--After testing the connectivity, connect sim7600x onto the Raspberry Pi, use this [reference](https://forums.raspberrypi.com/viewtopic.php?t=323177). 
+
+After testing the connectivity, connect sim7600x onto the Raspberry Pi, use this [reference image](https://forums.raspberrypi.com/viewtopic.php?t=323177). 
+
+## Implementation 
+
+Once the setup is done, on your system, create a bash file and copy the raw contents of ** rpi/lte_test.sh ** onto the file. 
+
+Things to keep in mind- 
+- It is essential to start by unloading the option and qmi_wwan driver and then forcefully load the qmi module to utilize the qmi_wwan 
+- Changing the default MTU from 1500 to 1430 is crucial to avoid any qmi call failed errors
+- Do not put the wlan down if you are connected through SSH 
