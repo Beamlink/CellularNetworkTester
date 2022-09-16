@@ -11,7 +11,7 @@ CNT is a Low-cost LTE Test Device for testing LTE Network Performance. This repo
 | [Kernel Version]  | 5.15                                                                                              |
 | [Module]          | sim7600x-4G HAT(B)                                                                                |
 | [Software]optional| Parallel-ssh, iperf3                                                                              |
-| [Other]           | configured SIMcard                                                                                |
+| [Other]           | configured SIMcard (for 2G/3G/4G LTE connections)                                                                                |
 
 ## Setup 
 
@@ -32,6 +32,11 @@ After testing the connectivity, connect sim7600x onto the Raspberry Pi, use this
 Once the setup is done, on your system, create a bash file and copy the raw contents of ** rpi/lte_test.sh ** onto the file. 
 
 Things to keep in mind- 
+- Have root priviledges before entering any commands
 - It is essential to start by unloading the option and qmi_wwan driver and then forcefully load the qmi module to utilize the qmi_wwan 
 - Changing the default MTU from 1500 to 1430 is crucial to avoid any qmi call failed errors
 - Do not put the wlan down if you are connected through SSH 
+
+## Test your tester 
+
+To check if the connectivity to the internet is established via qmi_wwan use can perform a ping test by forcefully direct traffic through wwan interface to any desired internet IP address. Refer to [ssh_ltetest.sh](ssh_ltetest.sh). 
