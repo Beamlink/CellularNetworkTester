@@ -14,11 +14,11 @@ Prerequisities:
 | [Other]           | configured SIMcard                                                                                |
 
 ## Setup 
-1. Setup your Raspberry Pi with Raspberry Pi OS Lite.
-   -a. Download the Raspberry Pi Imager- [Raspberry Pi Imager] (https://www.raspberrypi.com/software/) 
-   -b. Load the Raspberry Pi OS Lite onto the MicroSD Card using the imager, keep the following setting modifications in mind:
-       -Enable SSH 
-       -Set Username and Password 
-       -Configure wirless LAN (to establish WiFi connectivity)
-   -c. Insert the MicroSD in the SD slot on the Pi 
-   -d. Power up the Pi and check its connectivity to the network using ``` ip -c a ```
+Setup your Raspberry Pi with Raspberry Pi OS Lite- 
+1. Download the Raspberry Pi Imager- [Raspberry Pi Imager] (https://www.raspberrypi.com/software/) 
+2. Load the Raspberry Pi OS Lite onto the MicroSD Card using the imager, keep the following setting modifications in mind:
+   -Enable SSH 
+   -Set Username and Password 
+   -Configure wirless LAN (to establish WiFi connectivity)
+3. Insert the MicroSD in the SD slot on the Pi 
+4. Power up the Pi and check its connectivity to the network using ``` ip -c a ```
