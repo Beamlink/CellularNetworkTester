@@ -25,9 +25,9 @@ echo 'Y' | sudo tee /sys/class/net/wwan0/qmi/raw_ip
 
 sudo ip link set wwan0 up 
 
-sudo ip link set wlan0 down 
+#sudo ip link set wlan0 down          #Do not use this when accessing the tester through SSH
 
-sudo qmicli -p -d /dev/cdc-wdm0 --device-open-net='net-raw-ip|net-no-qos-header' --wds-start-network="ip-type=4" --client-no-release-cid 
+sudo qmicli -p -d /dev/cdc-wdm0 --device-open-net='net-raw-ip|net-no-qos-header' --wds-start-network="ip-type=4" --client-no-release-cid #You can also define APN in --wds-start-network
 
 sudo udhcpc -i wwan0
 
