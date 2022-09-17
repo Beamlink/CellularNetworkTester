@@ -24,12 +24,13 @@ Setup your Raspberry Pi with Raspberry Pi OS Lite-
 3. Insert the MicroSD in the SD slot on the Pi 
 4. Power up the Pi and check its connectivity to the network using ``` ip -c a ```
 5. Check SSH 
+6. Refer to [Sim7600setup](https://github.com/Beamlink/CellularNetworkTester/blob/main/sim7600setup). 
 
 After testing the connectivity, connect sim7600x onto the Raspberry Pi, use this [reference image](https://forums.raspberrypi.com/viewtopic.php?t=323177). 
 
 ## Implementation 
 
-Once the setup is done, on your system, create a bash file and copy the raw contents of ** rpi/lte_test.sh ** onto the file. 
+Once the setup is done, on your system, create a bash file and copy the raw contents of **rpi/lte_test.sh** onto the file. 
 
 Things to keep in mind- 
 - Have root priviledges before entering any commands
