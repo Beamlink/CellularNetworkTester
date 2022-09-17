@@ -2,6 +2,14 @@
 
 CNT is a Low-cost LTE Test Device for testing LTE Network Performance. This repository can be used to built a tester that emulates connecting multiple mobile devices to a network. This is a flexible and scalable project. Supplementary files also include a guide to use Parallel-ssh to simultaneously check network parameters between mobile device and server(s). This repository explicitly helps establish an interaction between sim7600x (4G HAT-B) module with Raspberry Pi Zero-W. CNT allows you to make a Raspberry Pi a Low-cost Cellular Test Device for testing 2G/3G/4G Network Performance. This project was designed for 4G performance. Altough Raspberry Pi is used as the core of the current tester, the interaction and steps remain the same across all models. Use of Raspberry Pi Zero-W helps setting up wireless connections on the Pi with ease which is largely nedded during the testing stages.  
 
+Sim7600x 4G Hat- (B) is a 4G Communication module, it also posseses GPS and GNSS positining capabilities. Supports LTE CAT4 up to 150Mbps (downlink transfer) and supports a wide range of IoT Applications. SIM7600 comes with a Qualcomm MDM9607 chipset.
+
+The installation of prerquisite software and libraries: libqmi-utils and udhcpc are covered in [sim7600setup](https://github.com/Beamlink/CellularNetworkTester/blob/main/sim7600setup).
+- **libqmi-utils**- help establish a connection with Qualcomm-based modems
+- **udhcpc**- used for modem DHCP Leasing 
+The cellular network gives a unique IP to the HAT and the Pi will have its own IP. This is used to solve IP addressing conflicts between the Pi and the HAT.
+
+
 ## Prerequisities: 
 | Category          | Description                                                                                       |
 | ----------------- |:--------------------------------------------------------------------------------------------------|
@@ -28,7 +36,7 @@ Setup your Raspberry Pi with Raspberry Pi OS Lite-
 
 After testing the connectivity, connect sim7600x onto the Raspberry Pi, use this [reference image](https://forums.raspberrypi.com/viewtopic.php?t=323177). 
 
-## Implementation 
+## Implementation and Configuration
 
 Once the setup is done, on your system, create a bash file and copy the raw contents of **rpi/lte_test.sh** onto the file. 
 
