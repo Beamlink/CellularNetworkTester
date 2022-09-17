@@ -11,6 +11,3 @@ sudo apt install libqmi-utils && udhcpc
 
 #Enable UART for communication
 sudo raspi-config #Select Interfacing Options > P6 Serial > No Reboot 
-
-
-
