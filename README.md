@@ -4,7 +4,7 @@ CNT is a Low-cost LTE Test Device for testing LTE Network Performance. This repo
 
 Sim7600x 4G Hat- (B) is a 4G Communication module, it also posseses GPS and GNSS positining capabilities. Supports LTE CAT4 up to 150Mbps (downlink transfer) and supports a wide range of IoT Applications. SIM7600 comes with a Qualcomm MDM9607 chipset.
 
-The installation of prerquisite software and libraries: libqmi-utils and udhcpc are covered in [sim7600setup](https://github.com/Beamlink/CellularNetworkTester/blob/main/sim7600setup).
+The installation of prerquisite software and libraries: libqmi-utils and udhcpc are covered in [sim7600setup](https://github.com/Beamlink/CellularNetworkTester/blob/main/sim7600setup)[^1]
 - **libqmi-utils**- help establish a connection with Qualcomm-based modems
 - **udhcpc**- used for modem DHCP Leasing 
 The cellular network gives a unique IP to the HAT and the Pi will have its own IP. This is used to solve IP addressing conflicts between the Pi and the HAT.
@@ -52,3 +52,6 @@ After system specific modifications, run the bash file in the same directory the
 ## Test your tester 
 
 To check if the connectivity to the internet is established via qmi_wwan use can perform a ping test by forcefully direct traffic through wwan interface to any desired internet IP address. Refer to [ssh_ltetest.sh](ssh_ltetest.sh). 
+
+
+[^1]: https://developers.telnyx.com/docs/v2/wireless/tutorials/sim7600
