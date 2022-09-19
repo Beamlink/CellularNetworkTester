@@ -17,9 +17,9 @@ The cellular network gives a unique IP to the HAT and the Pi will have its own I
 | [Sofware]         | Raspberry Pi OS Lite                                                                              |
 | [System]          | 32-bit                                                                                            |
 | [Kernel Version]  | 5.15                                                                                              |
-| [Module]          | sim7600x-4G HAT(B)                                                                                |
+| [Module]          | [sim7600x-4G HAT(B)](https://www.waveshare.com/product/sim7600g-h-4g-hat-b.htm)                   |
 | [Software]optional| Parallel-ssh, iperf3                                                                              |
-| [Other]           | configured SIMcard (for 2G/3G/4G LTE connections)                                                                                |
+| [Other]           | configured SIMcard (for 2G/3G/4G LTE connections)                                                 |
 
 ## Setup 
 
