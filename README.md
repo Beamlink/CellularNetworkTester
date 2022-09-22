@@ -73,7 +73,8 @@ ping 192.168.1.3
 ## iPerf Tests
 
 To emulate multiple mobile devices connected to a network, we can run simultaneous ping tests from all sources and record the network parameters using iPerf3. 
-For simultaneous ping test, we would need parallel-ssh on our systems. Follow this [parallel-ssh guide](https://www.cyberciti.biz/cloud-computing/how-to-use-pssh-parallel-ssh-program-on-linux-unix/) and [parallel-ssh manual](https://manpages.ubuntu.com/manpages/focal/man1/parallel-ssh.1.html). 
+For simultaneous ping test, we would need parallel-ssh on our systems. Follow this [parallel-ssh guide](https://www.cyberciti.biz/cloud-computing/how-to-use-pssh-parallel-ssh-program-on-linux-unix/) and [parallel-ssh manual](https://manpages.ubuntu.com/manpages/focal/man1/parallel-ssh.1.html).
+
 *Note- most recent ubuntu systems do not recognize pssh, hence replace pssh with parallel-ssh* 
 
 Once the parallel ssh is set up, download [iPerf3](https://linuxhint.com/install-iperf3-ubuntu/). Refer to [iperf3_cleint.sh](https://github.com/Beamlink/CellularNetworkTester/blob/main/iperf3_client.sh) and [iperf3_server.sh](https://github.com/Beamlink/CellularNetworkTester/blob/main/iperf3_server.sh) to get commands to initate the iperf tests. 
