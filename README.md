@@ -70,5 +70,20 @@ sudo ./lte_test.sh
 #Test Connectivity
 ping 192.168.1.3
 ```
+## iPerf Tests
+
+To emulate multiple mobile devices connected to a network, we can run simultaneous ping tests from all sources and record the network parameters using iPerf3. 
+For simultaneous ping test, we would need parallel-ssh on our systems. Follow this [parallel-ssh guide](https://www.cyberciti.biz/cloud-computing/how-to-use-pssh-parallel-ssh-program-on-linux-unix/) and [parallel-ssh manual](https://manpages.ubuntu.com/manpages/focal/man1/parallel-ssh.1.html). 
+*Note- most recent ubuntu systems do not recognize pssh, hence replace pssh with parallel-ssh* 
+
+Once the parallel ssh is set up, download [iPerf3](https://linuxhint.com/install-iperf3-ubuntu/). Refer to [iperf3_cleint.sh](https://github.com/Beamlink/CellularNetworkTester/blob/main/iperf3_client.sh) and [iperf3_server.sh](https://github.com/Beamlink/CellularNetworkTester/blob/main/iperf3_server.sh) to get commands to initate the iperf tests. 
+
+Things to remember- 
+- Always run the server iperf command first, as the client initiates the connection to a server that has a port listening for connection requests
+- Open multiple ports on the server to accomodate simulatenous connection with multiple clients 
+- By default iperf3 runs TCP Connections, you can use -U flag to test UDP network parameters 
+- Based on your system requirments you can envoke various [iperf3 flags](https://iperf.fr/iperf-doc.php) in your command. 
+
+Finally, checkout [parallel-ssh.sh](https://github.com/Beamlink/CellularNetworkTester/blob/main/parallel-ssh.sh) and run the command to begin simultaneous ping test. 
 
 [^1]: https://developers.telnyx.com/docs/v2/wireless/tutorials/sim7600
