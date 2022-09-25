@@ -1,6 +1,6 @@
 # CellularNetworkTester
 
-![alt text](https://github.com/Beamlink/CellularNetworkTester/blob/main/medusa.jpg?raw=true)
+![A USB hub with somewhat messy cables running to a number of small boards with attached antennae.  This device is named Medusa, and is the original version of CNT designed in-house to test the Beamlink Network](https://github.com/Beamlink/CellularNetworkTester/blob/main/medusa.jpg?raw=true)
 
 CNT is a Low-cost LTE Test Device for testing LTE Network Performance. This repository can be used to build a tester that emulates connecting multiple mobile devices to a network. This is a flexible and scalable project. Supplementary files also include a guide to use Parallel-SSH to simultaneously check network parameters between mobile device and server(s). This repository explicitly helps establish an interaction between sim7600x (4G HAT-B) module with Raspberry Pi Zero-W. CNT allows you to make a Raspberry Pi a Low-cost Cellular Test Device for testing 2G/3G/4G Network Performance. This project was designed for 4G performance. Altough Raspberry Pi is used as the core of the current tester, the interaction and steps remain the same across all models. Use of Raspberry Pi Zero-W helps setting up wireless connections on the Pi with ease which is largely needed during the testing stages.  
 
