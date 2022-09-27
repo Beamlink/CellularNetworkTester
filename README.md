@@ -1,6 +1,12 @@
-# CellularNetworkTester
+<div align="center">
+   <img width="600" height="400" src="https://github.com/Beamlink/CellularNetworkTester/blob/main/medusa.jpg" alt="A USB hub with somewhat messy cables running to a number of small boards with attached antennae.  This device is named Medusa, and is the original version of CNT designed in-house to test the Beamlink Network">
+</div>
 
-![A USB hub with somewhat messy cables running to a number of small boards with attached antennae.  This device is named Medusa, and is the original version of CNT designed in-house to test the Beamlink Network](https://github.com/Beamlink/CellularNetworkTester/blob/main/medusa.jpg?raw=true)
+# CellularNetworkTester (aka Project Medusa)
+
+Meet Medusa - don't worry, you can look at her.  Originally built to run internal tests on the [Beamlink Network](https://beamlink.io), Medusa solves the problem of requiring advanced simulation tools or a large number of expensive phones to test an LTE cellular network.  At a high level, she's a USB hub connecting 30 or so Raspberry Pi based cell phone emulators that ping each other and a base station back and forth to gather a plethora of test data like latency and throughput.  Since we couldn't find any other affordable solutions to this problem, we decided to open source Medusa so you too may easily test your cell networks
+
+## Technical Overview
 
 CNT is a Low-cost LTE Test Device for testing LTE Network Performance. This repository can be used to build a tester that emulates connecting multiple mobile devices to a network. This is a flexible and scalable project. Supplementary files also include a guide to use Parallel-SSH to simultaneously check network parameters between mobile device and server(s). This repository explicitly helps establish an interaction between sim7600x (4G HAT-B) module with Raspberry Pi Zero-W. CNT allows you to make a Raspberry Pi a Low-cost Cellular Test Device for testing 2G/3G/4G Network Performance. This project was designed for 4G performance. Altough Raspberry Pi is used as the core of the current tester, the interaction and steps remain the same across all models. Use of Raspberry Pi Zero-W helps setting up wireless connections on the Pi with ease which is largely needed during the testing stages.  
 
@@ -20,7 +26,7 @@ The cellular network gives a unique IP to the HAT and the Pi will have its own I
 | [System]          | 32-bit                                                                                            |
 | [Kernel Version]  | 5.15                                                                                              |
 | [Module]          | [sim7600x-4G HAT(B)](https://www.waveshare.com/product/sim7600g-h-4g-hat-b.htm)                   |
-| [Software]optional| Parallel-ssh, iperf3                                                                              |
+| [Software]optional| Parallel-SSH, iperf3                                                                              |
 | [Other]           | configured SIMcard (for 2G/3G/4G LTE connections)                                                 |
 
 ## Setup 
