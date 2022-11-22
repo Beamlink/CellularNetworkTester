@@ -1,0 +1,3 @@
+#Paste the following in your /etc/ssh/sshd_config file in the rasperberry pi to avoid lag in ssh connection- 
+
+IPQoS cs0 cs0 
